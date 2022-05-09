@@ -494,15 +494,14 @@
             </li>
           </ul>
         </div>
-        <form>
-          <label for="footer-input" class="footer-label"
-            >Подпишитесь на рассылку</label
-          >
+        <form class="footer-form">
+          <label for="name" class="footer-label">Подпишитесь на рассылку</label>
           <div class="input-subscription">
             <input
               type="text"
               class="footer-input"
               name="user-name"
+              id="name"
               required
               title="name"
               placeholder="E-mail"
@@ -518,16 +517,23 @@
       </div>
     </footer>
 
-    <!------------BACKDROP--------------->
+    <!----------BACKDROP MODAL--------------->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- <button type="button" class="modal-close-btn" data-modal-close></button> -->
-        <svg class="modal-close-btn" data-modal-close width="70" height="70">
-          <use
-            href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"
-          ></use>
-        </svg>
+        <button
+          type="button"
+          class="modal-close-button"
+          data-modal-close
+          width="70"
+          height="70"
+        >
+          <svg class="modal-close-btn">
+            <use
+              href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"
+            ></use>
+          </svg>
+        </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
           <div class="modal-field">
@@ -587,7 +593,7 @@
           <div class="modal-field">
             <label for="user-text" class="madal-label">Комментарий</label>
             <textarea
-              name=""
+              name="comments"
               id="user-text"
               placeholder="Введите текст"
               class="modal-text"
