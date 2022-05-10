@@ -986,6 +986,8 @@ header {
 }
 
 .modal-close-button {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   position: absolute;
   top: 10px;
